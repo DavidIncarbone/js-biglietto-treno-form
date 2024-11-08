@@ -51,12 +51,32 @@
 
         </form>
 
-        <section>
+        <section id="ticketPrice" class="">
             <h2>Il tuo biglietto</h2>
-            <div id="ticketResult" class="container mt-3 d-none">
-                <p>Il prezzo del tuo biglietto è di <span id="ticketPrice" class="text-primary"></span>
 
-                </p>
+            <div class="container mt-3 p-3 bg-white">
+                <h3>Dettaglio passeggeri</h3>
+                <hr>
+
+                <table class="w-100 ">
+                    <tr>
+                        <th class="text-uppercase">Nome passeggero</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                        <td id="nameSurnameResult"></td>
+                        <td id="offer"></td>
+                        <td>5</td>
+                        <td>Tuo codice</td>
+                        <td id="ticketPriceResult"></td>
+                    </tr>
+
+                </table>
+
+                <hr>
             </div>
         </section>
     </main>
