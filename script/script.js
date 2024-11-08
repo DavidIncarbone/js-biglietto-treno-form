@@ -41,9 +41,9 @@ let discountSenior = 40;
 
 principalForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    const userNameSurname = userNameSurnameInput.value;
-    const userKM = parseInt(userKMInput.value);
-    const userAge = parseInt(userAgeInput.value);
+    let userNameSurname = userNameSurnameInput.value;
+    let userKM = parseInt(userKMInput.value);
+    let userAge = parseInt(userAgeInput.value);
     const standardPrice = priceKm * userKM;
     nameSurnameResult.innerHTML = userNameSurname
 
@@ -74,7 +74,11 @@ principalForm.addEventListener("submit", function (event) {
 
     ticketResult.classList.remove("d-none");
 
-    event.stopPropagation;
+    userNameSurnameInput.value = "";
+    userKMInput.value = "";
+    userAgeInput.value = "";
+
+
 }
 
 )

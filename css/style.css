@@ -28,7 +28,8 @@ form>div {
     box-shadow: 5px 10px;
 }
 
-div #form #ticketResult {
+div #form,
+#ticketResult {
 
     max-width: 70%;
 }
