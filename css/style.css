@@ -2,6 +2,7 @@
     --color-bg: #b91547;
     --color-bg-passeger: #757575;
     --color-border-button: #e98b4e;
+    --color-bg-buttons: #c5c5c5;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 h2 {
     color: white;
+    text-align: center;
 }
 
 .container {
@@ -18,7 +20,43 @@ h2 {
     background-color: white;
 }
 
-div #form {
+div #form #ticketResult {
 
     max-width: 70%;
+}
+
+div #form label {
+
+    color: var(--color-bg);
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+div #form input {
+
+    border: 2px solid var(--color-bg);
+}
+
+div #buttons {
+
+    max-width: 20%;
+}
+
+div #buttons>input {
+
+    background-color: var(--color-bg-buttons);
+    color: var(--color-bg);
+    font-weight: 700;
+
+}
+
+div #buttons>input:nth-child(1) {
+
+    border: 2px solid var(--color-border-button);
+}
+
+.debug {
+
+    border: 1px solid red;
 }

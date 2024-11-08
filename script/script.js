@@ -11,6 +11,8 @@ const userAgeInput = document.getElementById("userAge");
 console.dir(userAgeInput);
 const principalForm = document.getElementById("principalForm");
 console.dir(principalForm);
+const userNameSurnameInput = document.getElementById("nameSurname");
+console.dir(userNameSurnameInput);
 
 
 
@@ -36,6 +38,7 @@ let discountSenior = 40;
 
 principalForm.addEventListener("submit", function (event) {
     event.preventDefault();
+    const userNameSurname = userNameSurnameInput;
     const userKM = parseInt(userKMInput.value);
     const userAge = parseInt(userAgeInput.value);
     const standardPrice = priceKm * userKM;
