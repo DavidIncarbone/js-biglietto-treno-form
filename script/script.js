@@ -10,5 +10,13 @@ let discountJunior = 20;
 let ageSenior = 65;
 let discountSenior = 40;
 
-// user KM
+//get elements by index.html
+
+const userKM = document.getElementById("userKM");
+console.dir(userKM);
+const userAge = document.getElementById("userAge");
+console.dir(userAge);
+const button = document.getElementById("confirm");
+console.dir(button);
+
 
