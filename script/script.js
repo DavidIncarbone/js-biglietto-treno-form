@@ -13,6 +13,8 @@ const principalForm = document.getElementById("principalForm");
 console.dir(principalForm);
 const userNameSurnameInput = document.getElementById("nameSurname");
 console.dir(userNameSurnameInput);
+const refresh = document.getElementById("refresh");
+console.dir(refresh);
 
 
 
@@ -26,6 +28,7 @@ const ticketPriceResult = document.getElementById("ticketPriceResult");
 console.dir(ticketPriceResult);
 const offerType = document.getElementById("offer");
 console.dir(offerType);
+
 // Variable Declar/Init
 
 let finalPrice = 0;
@@ -50,38 +53,40 @@ principalForm.addEventListener("submit", function (event) {
     console.log(userKM + " KM");
     console.log(userAge + " anni");
 
-
     if (userAge < ageJunior) {
-
         discountJunior = standardPrice * (discountJunior / 100);
         finalPrice = standardPrice - discountJunior;
         console.log(finalPrice.toFixed(2) + "€");
-        offerType.innerHTML = "Tariffa Junior"
-        ticketPriceResult.innerHTML = finalPrice.toFixed(2) + "€ ";
+        offerType.innerHTML = "<b>Tariffa Junior</b>"
+        ticketPriceResult.innerHTML = "<b>" + finalPrice.toFixed(2) + "€" + "</b>";
     } else if (userAge > ageSenior) {
 
         discountSenior = standardPrice * (discountSenior / 100);
         finalPrice = standardPrice - discountSenior;
         console.log(finalPrice.toFixed(2) + "€");
-        offerType.innerHTML = "Tariffa Senior";
-        ticketPriceResult.innerHTML = finalPrice.toFixed(2) + "€ ";
+        offerType.innerHTML = "<b>Tariffa Senior</b>";
+        ticketPriceResult.innerHTML = "<b>" + finalPrice.toFixed(2) + "€" + "</b>";
     } else {
         console.log(standardPrice.toFixed(2) + "€");
         offerType.innerHTML = "Tariffa standard";
-        ticketPriceResult.innerHTML = standardPrice + "€";
-
+        ticketPriceResult.innerHTML = "<b>" + standardPrice + "€" + "</b>";
     }
 
     ticketResult.classList.remove("d-none");
-
     userNameSurnameInput.value = "";
     userKMInput.value = "";
     userAgeInput.value = "";
-
-
 }
 
 )
+
+refresh.addEventListener("click", function (event) {
+
+    ticketResult.classList.add("d-none");
+    userNameSurnameInput.value = "";
+    userKMInput.value = "";
+    userAgeInput.value = "";
+})
 
 
 

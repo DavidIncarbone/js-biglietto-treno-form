@@ -44,6 +44,7 @@
                 <div id="buttons" class="container d-flex justify-content-around">
                     <input type="submit" value="Genera" id="confirm" class="mr-5">
                     <input type="reset" value="Annulla" class="ml-5">
+                    <input type="button" value="Ricalcola" id="refresh">
                 </div>
 
             </div>
@@ -58,25 +59,24 @@
                 <h3>Dettaglio passeggeri</h3>
                 <hr>
 
-                <table class="w-100 ">
-                    <tr>
+                <table class="w-100 debug">
+                    <thead>
                         <th class="text-uppercase">Nome passeggero</th>
                         <th>Offerta</th>
                         <th>Carrozza</th>
                         <th>Codice CP</th>
                         <th>Costo biglietto</th>
-                    </tr>
-                    <tr>
-                        <td id="nameSurnameResult"> </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td id="offer"></td>
-                        <td>5</td>
-                        <td>Tuo codice</td>
-                        <td id="ticketPriceResult"></td>
-                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="nameSurnameResult">a </td>
+                            <td id="offer"></td>
+                            <td><b>5</b></td>
+                            <td><b>Tuo codice</b></td>
+                            <td id="ticketPriceResult"></td>
+                        </tr>
 
+                    </tbody>
                 </table>
 
                 <hr>
