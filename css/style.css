@@ -28,6 +28,7 @@ h2 {
 form>div {
 
     background-color: goldenrod;
+    background-image: linear-gradient(goldenrod, var(--color-bg-passeger));
     border-radius: 5px;
     border: 1px solid;
     box-shadow: 5px 10px;
@@ -75,7 +76,8 @@ div #buttons>input:nth-child(1) {
 
 section>div {
 
-    background-color: var(--color-bg);
+    background-color: red;
+    background-image: linear-gradient(var(--color-bg), var(--color-bg-passeger));
 }
 
 table {
@@ -84,13 +86,7 @@ table {
     text-align: center;
 }
 
-thead>th:first-child,
-tr>td {
-
-    background-color: red;
-    background-image: linear-gradient(var(--color-bg), var(--color-bg-passeger));
-
-}
+table {}
 
 tr>td:first-child {
 
