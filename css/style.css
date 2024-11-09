@@ -13,7 +13,8 @@
 
 body {
 
-    background-color: var(--color-bg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f8/Frecciarossa_1000_nuova_livrea.jpg);
+    background-size: cover;
 }
 
 /* form */
@@ -26,7 +27,7 @@ h2 {
 
 form>div {
 
-    background-color: white;
+    background-color: goldenrod;
     border-radius: 5px;
     border: 1px solid;
     box-shadow: 5px 10px;
@@ -72,19 +73,31 @@ div #buttons>input:nth-child(1) {
 
 /* Ticket result */
 
+section>div {
+
+    background-color: var(--color-bg);
+}
+
 table {
 
     height: 20vh;
     text-align: center;
 }
 
-tr>th:first-child,
-tr>td:first-child {
+thead>th:first-child,
+tr>td {
 
-    background-color: var(--color-bg-passeger);
+    background-color: red;
+    background-image: linear-gradient(var(--color-bg), var(--color-bg-passeger));
+
 }
 
 tr>td:first-child {
 
     font-weight: 1000;
+}
+
+section {
+
+    color: goldenrod;
 }
